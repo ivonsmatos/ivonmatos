@@ -1,8 +1,6 @@
-"use client";
-
 import { PropsWithChildren, useEffect, useRef } from "react";
 import gsap from "gsap";
-import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 let isGsapRegistered = false;
 
@@ -27,14 +25,15 @@ export default function AnimatedSection({
 
   useEffect(() => {
     registerGsap();
-    const el = elementRef.current;
-    if (!el || typeof window === "undefined") {
+    const element = elementRef.current;
+
+    if (!element || typeof window === "undefined") {
       return () => undefined;
     }
 
-    const ctx = gsap.context(() => {
+    const context = gsap.context(() => {
       gsap.fromTo(
-        el,
+        element,
         { opacity: 0, y: 56 },
         {
           opacity: 1,
@@ -43,15 +42,15 @@ export default function AnimatedSection({
           ease: "power3.out",
           clearProps: "transform",
           scrollTrigger: {
-            trigger: el,
+            trigger: element,
             start: "top 82%",
             once: true,
           },
         }
       );
-    }, el);
+    }, element);
 
-    return () => ctx.revert();
+    return () => context.revert();
   }, []);
 
   return (

@@ -1,15 +1,10 @@
-import type { Metadata } from "next";
-import Link from "next/link";
-import { notFound } from "next/navigation";
+import { Helmet } from "react-helmet-async";
+import { Link, useParams } from "react-router-dom";
 
-import AnimatedSection from "../../(components)/AnimatedSection";
+import AnimatedSection from "@/components/AnimatedSection";
 import { posts } from "@/data/posts";
 
-type BlogParams = {
-  params: {
-    slug: string;
-  };
-};
+import NotFoundPage from "./NotFoundPage";
 
 const contentBySlug: Record<string, { paragraphs: string[]; bullets: string[] }> = {
   "arquitetura-responsavel-inteligencia-artificial": {
@@ -47,51 +42,40 @@ const contentBySlug: Record<string, { paragraphs: string[]; bullets: string[] }>
   },
 };
 
-export function generateStaticParams() {
-  return posts.map((post) => ({ slug: post.slug }));
-}
+export default function BlogPostPage() {
+  const { slug } = useParams();
+  const post = posts.find((item) => item.slug === slug);
 
-export async function generateMetadata({ params }: BlogParams): Promise<Metadata> {
-  const post = posts.find((item) => item.slug === params.slug);
-
-  if (!post) {
-    return {
-      title: "Artigo não encontrado",
-    };
-  }
-
-  return {
-    title: post.title,
-    description: post.excerpt,
-    openGraph: {
-      title: post.title,
-      description: post.excerpt,
-      type: "article",
-      locale: "pt_BR",
-    },
-  };
-}
-
-export default function BlogPost({ params }: BlogParams) {
-  const post = posts.find((item) => item.slug === params.slug);
-
-  if (!post) {
-    notFound();
+  if (!post || !slug) {
+    return <NotFoundPage />;
   }
 
   const content = contentBySlug[post.slug];
+  const formattedDate = new Date(post.date).toLocaleDateString("pt-BR");
+  const canonicalUrl = `https://ivonmatos.com.br/blog/${post.slug}`;
 
   return (
     <>
+      <Helmet>
+        <title>{post.title}</title>
+        <meta name="description" content={post.excerpt} />
+        <meta property="og:type" content="article" />
+        <meta property="og:title" content={post.title} />
+        <meta property="og:description" content={post.excerpt} />
+        <meta property="og:url" content={canonicalUrl} />
+        <meta property="article:published_time" content={post.date} />
+        <link rel="canonical" href={canonicalUrl} />
+      </Helmet>
+
       <AnimatedSection id="post-topo" className="pt-6">
         <div className="container">
-          <Link className="btn btn-outline-dark mb-4" href="/blog">
+          <Link className="btn btn-outline-dark mb-4" to="/blog">
             ← Voltar para o blog
           </Link>
           <span className="badge-soft mb-3">{post.category}</span>
           <h1 className="mb-3">{post.title}</h1>
           <div className="d-flex gap-3 text-muted">
-            <span>{new Date(post.date).toLocaleDateString("pt-BR")}</span>
+            <span>{formattedDate}</span>
             <span>{post.readingTime}</span>
           </div>
         </div>
@@ -99,7 +83,7 @@ export default function BlogPost({ params }: BlogParams) {
 
       <AnimatedSection id="post-conteudo" className="section-muted">
         <div className="container max-w-44">
-          {content?.paragraphs.map((paragraph) => (
+          {content?.paragraphs?.map((paragraph) => (
             <p key={paragraph} className="mb-4">
               {paragraph}
             </p>
@@ -114,9 +98,8 @@ export default function BlogPost({ params }: BlogParams) {
             </ul>
           ) : null}
           <p className="mb-0">
-            Gostou do conteúdo? Vamos continuar a conversa. Enviei insights
-            exclusivos na minha newsletter e compartilho bastidores de projetos
-            no LinkedIn.
+            Gostou do conteúdo? Vamos continuar a conversa. Enviei insights exclusivos na minha newsletter e compartilho
+            bastidores de projetos no LinkedIn.
           </p>
         </div>
       </AnimatedSection>

@@ -1,8 +1,8 @@
 @use "sass:map";
-@use "../styles/variables" as *;
-@use "../styles/mixins" as *;
-@use "../styles/typography" as *;
-@use "../styles/animations" as *;
+@use "./variables" as *;
+@use "./mixins" as *;
+@use "./typography" as *;
+@use "./animations" as *;
 
 @import "bootstrap/scss/functions";
 

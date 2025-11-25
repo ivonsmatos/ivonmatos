@@ -1,7 +1,7 @@
-import Image from "next/image";
-import Link from "next/link";
+import { Helmet } from "react-helmet-async";
+import { Link } from "react-router-dom";
 
-import AnimatedSection from "./(components)/AnimatedSection";
+import AnimatedSection from "@/components/AnimatedSection";
 import { experiences } from "@/data/experiences";
 import { posts } from "@/data/posts";
 import { services } from "@/data/services";
@@ -23,28 +23,34 @@ const featuredTools = [
   "DBT",
 ];
 
-export default function Home() {
+export default function HomePage() {
   return (
     <>
+      <Helmet>
+        <title>Arquitetura em IA responsável</title>
+        <meta
+          name="description"
+          content="Portfólio oficial de Ivon Matos, arquiteto em Inteligência Artificial. Estratégia, engenharia de dados e educação executiva em um único hub."
+        />
+        <link rel="canonical" href="https://ivonmatos.com.br/" />
+      </Helmet>
+
       <AnimatedSection id="inicio" className="pt-6">
         <div className="container hero">
           <div>
             <span className="badge-soft mb-3">Arquitetura em IA &amp; Dados</span>
             <h1 className="mb-4">
-              Estratégia, arquitetura e educação para organizações movidas a
-              inteligência artificial.
+              Estratégia, arquitetura e educação para organizações movidas a inteligência artificial.
             </h1>
             <p className="mb-4">
-              Sou Ivon Matos, arquiteto em Inteligência Artificial, professor e
-              arquiteto de dados. Conecto visão de negócios, engenharia e ética
-              digital para acelerar resultados com soluções inteligentes e
-              confiáveis.
+              Sou Ivon Matos, arquiteto em Inteligência Artificial, professor e arquiteto de dados. Conecto visão de
+              negócios, engenharia e ética digital para acelerar resultados com soluções inteligentes e confiáveis.
             </p>
             <div className="d-flex flex-wrap gap-3 mb-5">
-              <Link className="btn btn-cta touch-friendly" href="/contato">
+              <Link className="btn btn-cta touch-friendly" to="/contato">
                 Agendar conversa
               </Link>
-              <Link className="btn btn-outline-dark touch-friendly" href="/curriculum">
+              <Link className="btn btn-outline-dark touch-friendly" to="/curriculum">
                 Ver currículo
               </Link>
             </div>
@@ -60,13 +66,7 @@ export default function Home() {
             </div>
           </div>
           <div className="hero-image">
-            <Image
-              src="/images/ivon-matos-portrait.svg"
-              alt="Ilustração de Ivon Matos"
-              width={520}
-              height={620}
-              priority
-            />
+            <img src="/images/ivon-matos-portrait.svg" alt="Ilustração de Ivon Matos" width={520} height={620} loading="lazy" />
           </div>
         </div>
       </AnimatedSection>
@@ -77,9 +77,8 @@ export default function Home() {
             <span className="badge-soft mb-3">Serviços</span>
             <h2 className="mb-3">Da visão estratégica ao impacto mensurável</h2>
             <p className="mx-auto max-w-44">
-              Projetos sob medida que combinam arquitetura, engenharia e
-              desenvolvimento de talentos para transformar dados em soluções de
-              inteligência artificial responsáveis.
+              Projetos sob medida que combinam arquitetura, engenharia e desenvolvimento de talentos para transformar dados
+              em soluções de inteligência artificial responsáveis.
             </p>
           </div>
           <div className="row g-4">
@@ -110,9 +109,8 @@ export default function Home() {
               <span className="badge-soft mb-3">Trajetória</span>
               <h2 className="mb-3">Experiência que une academia e mercado</h2>
               <p>
-                Lidero programas que conectam ciência, engenharia e governança
-                para entregar inteligência artificial aplicável, ética e
-                escalável em ambientes complexos.
+                Lidero programas que conectam ciência, engenharia e governança para entregar inteligência artificial
+                aplicável, ética e escalável em ambientes complexos.
               </p>
             </div>
             <div className="col-12 col-lg-7">
@@ -139,7 +137,7 @@ export default function Home() {
               <span className="badge-soft mb-3">Insights</span>
               <h2 className="mb-0">Artigos recentes</h2>
             </div>
-            <Link className="btn btn-outline-dark touch-friendly" href="/blog">
+            <Link className="btn btn-outline-dark touch-friendly" to="/blog">
               Acessar blog
             </Link>
           </div>
@@ -161,7 +159,7 @@ export default function Home() {
                       </span>
                     ))}
                   </div>
-                  <Link className="stretched-link" href={`/blog/${post.slug}`}>
+                  <Link className="stretched-link" to={`/blog/${post.slug}`}>
                     <span className="visually-hidden">Ler {post.title}</span>
                   </Link>
                 </article>
@@ -177,8 +175,8 @@ export default function Home() {
             <span className="badge-soft mb-3">Ferramentas favoritas</span>
             <h2 className="mb-3">Ecossistema tecnológico</h2>
             <p className="mx-auto max-w-42">
-              Seleção de tecnologias que utilizo diariamente para projetar,
-              orquestrar e monitorar plataformas de IA orientadas a resultados.
+              Seleção de tecnologias que utilizo diariamente para projetar, orquestrar e monitorar plataformas de IA
+              orientadas a resultados.
             </p>
           </div>
           <div className="row row-cols-2 row-cols-md-4 g-3">
@@ -197,15 +195,14 @@ export default function Home() {
         <div className="container text-center">
           <h2 className="mb-4">Pronto para destravar valor com IA responsável?</h2>
           <p className="mx-auto mb-4 max-w-40">
-            Vamos desenhar juntos uma jornada que combina estratégia, dados e
-            capacitação para equipes que precisam entregar resultados rápidos e
-            sustentáveis.
+            Vamos desenhar juntos uma jornada que combina estratégia, dados e capacitação para equipes que precisam
+            entregar resultados rápidos e sustentáveis.
           </p>
           <div className="d-flex flex-wrap justify-content-center gap-3">
-            <Link className="btn btn-cta touch-friendly" href="/contato">
+            <Link className="btn btn-cta touch-friendly" to="/contato">
               Iniciar projeto
             </Link>
-            <Link className="btn btn-outline-dark touch-friendly" href="/sobre">
+            <Link className="btn btn-outline-dark touch-friendly" to="/sobre">
               Conhecer trajetória
             </Link>
           </div>

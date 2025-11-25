@@ -1,15 +1,8 @@
-import type { Metadata } from "next";
-import Image from "next/image";
-import Link from "next/link";
+import { Helmet } from "react-helmet-async";
+import { Link } from "react-router-dom";
 
-import AnimatedSection from "../(components)/AnimatedSection";
+import AnimatedSection from "@/components/AnimatedSection";
 import { experiences } from "@/data/experiences";
-
-export const metadata: Metadata = {
-  title: "Sobre Ivon Matos",
-  description:
-    "Conheça a trajetória de Ivon Matos, arquiteto em Inteligência Artificial, professor e arquiteto de dados com atuação em projetos estratégicos na América Latina.",
-};
 
 const valores = [
   {
@@ -46,30 +39,32 @@ const pesquisa = [
 export default function SobrePage() {
   return (
     <>
+      <Helmet>
+        <title>Sobre Ivon Matos</title>
+        <meta
+          name="description"
+          content="Conheça a trajetória de Ivon Matos, arquiteto em IA, professor e arquiteto de dados, atuando em projetos estratégicos na América Latina."
+        />
+        <link rel="canonical" href="https://ivonmatos.com.br/sobre" />
+      </Helmet>
+
       <AnimatedSection id="sobre-intro" className="pt-6">
         <div className="container hero">
           <div>
             <span className="badge-soft mb-3">Sobre</span>
             <h1 className="mb-3">Construindo pontes entre estratégia, tecnologia e pessoas</h1>
             <p>
-              Minha jornada combina mais de 15 anos liderando projetos de dados e
-              inteligência artificial, desenhando arquiteturas resilientes e
-              preparando times para operar com autonomia e responsabilidade.
+              Minha jornada combina mais de 15 anos liderando projetos de dados e inteligência artificial, desenhando
+              arquiteturas resilientes e preparando times para operar com autonomia e responsabilidade.
             </p>
             <p>
-              No universo acadêmico, atuo como professor e pesquisador,
-              desenvolvendo programas imersivos que aproximam teoria e prática.
-              No mercado, ajudo organizações a conectarem visão, processos e
-              plataformas para gerar valor sustentável.
+              No universo acadêmico, atuo como professor e pesquisador, desenvolvendo programas imersivos que aproximam
+              teoria e prática. No mercado, ajudo organizações a conectarem visão, processos e plataformas para gerar valor
+              sustentável.
             </p>
           </div>
           <div className="hero-image">
-            <Image
-              src="/images/ivon-matos-portrait.svg"
-              alt="Ilustração de Ivon Matos"
-              width={520}
-              height={620}
-            />
+            <img src="/images/ivon-matos-portrait.svg" alt="Ilustração de Ivon Matos" width={520} height={620} loading="lazy" />
           </div>
         </div>
       </AnimatedSection>
@@ -80,9 +75,8 @@ export default function SobrePage() {
             <span className="badge-soft mb-3">Valores</span>
             <h2 className="mb-3">Princípios que guiam cada projeto</h2>
             <p className="mx-auto max-w-42">
-              Toda solução precisa equilibrar impacto, transparência e
-              sustentabilidade. Esses são os pilares que orientam minhas
-              decisões.
+              Toda solução precisa equilibrar impacto, transparência e sustentabilidade. Esses são os pilares que orientam
+              minhas decisões.
             </p>
           </div>
           <div className="row g-4">
@@ -105,9 +99,8 @@ export default function SobrePage() {
               <span className="badge-soft mb-3">Experiência</span>
               <h2 className="mb-3">Do laboratório à produção</h2>
               <p>
-                Traduzi pesquisas em IA em plataformas escaláveis, estruturando
-                times multidisciplinares e frameworks de governança que suportam
-                a evolução contínua de modelos em produção.
+                Traduzi pesquisas em IA em plataformas escaláveis, estruturando times multidisciplinares e frameworks de
+                governança que suportam a evolução contínua de modelos em produção.
               </p>
             </div>
             <div className="col-12 col-lg-7">
@@ -156,10 +149,10 @@ export default function SobrePage() {
         <div className="container text-center">
           <h2 className="mb-3">Vamos criar soluções responsáveis?</h2>
           <p className="mx-auto max-w-40 mb-4">
-            Conte comigo para estruturar ecossistemas de dados, acelerar jornadas
-            de IA e formar times prontos para inovar com segurança.
+            Conte comigo para estruturar ecossistemas de dados, acelerar jornadas de IA e formar times prontos para inovar
+            com segurança.
           </p>
-          <Link className="btn btn-cta touch-friendly" href="/contato">
+          <Link className="btn btn-cta touch-friendly" to="/contato">
             Falar com Ivon
           </Link>
         </div>

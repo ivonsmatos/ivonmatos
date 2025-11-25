@@ -1,12 +1,6 @@
-import type { Metadata } from "next";
+import { Helmet } from "react-helmet-async";
 
-import AnimatedSection from "../(components)/AnimatedSection";
-
-export const metadata: Metadata = {
-  title: "Contato",
-  description:
-    "Entre em contato com Ivon Matos para projetos de arquitetura em IA, dados e programas educacionais corporativos.",
-};
+import AnimatedSection from "@/components/AnimatedSection";
 
 const canais = [
   {
@@ -29,13 +23,22 @@ const canais = [
 export default function ContatoPage() {
   return (
     <>
+      <Helmet>
+        <title>Contato</title>
+        <meta
+          name="description"
+          content="Entre em contato com Ivon Matos para projetos de arquitetura em IA, dados e programas educacionais corporativos."
+        />
+        <link rel="canonical" href="https://ivonmatos.com.br/contato" />
+      </Helmet>
+
       <AnimatedSection id="contato-intro" className="pt-6">
         <div className="container text-center">
           <span className="badge-soft mb-3">Contato</span>
           <h1 className="mb-3">Vamos conversar sobre o seu próximo desafio</h1>
           <p className="mx-auto max-w-40">
-            Projetos de arquitetura em IA, dados e programas educacionais
-            personalizados para times que precisam acelerar com segurança.
+            Projetos de arquitetura em IA, dados e programas educacionais personalizados para times que precisam acelerar
+            com segurança.
           </p>
         </div>
       </AnimatedSection>
@@ -102,9 +105,7 @@ export default function ContatoPage() {
                     <button className="btn btn-cta touch-friendly" type="submit">
                       Enviar mensagem
                     </button>
-                    <small className="text-muted">
-                      Responderei em até 2 dias úteis.
-                    </small>
+                    <small className="text-muted">Responderei em até 2 dias úteis.</small>
                   </div>
                 </form>
               </div>
@@ -124,13 +125,11 @@ export default function ContatoPage() {
                 </ul>
                 <h3 className="mb-3">Preferências de reunião</h3>
                 <p className="mb-3">
-                  Atendo em português, inglês e espanhol. Virtualmente, uso MS Teams,
-                  Google Meet ou Zoom. Reuniões presenciais podem ser agendadas em
-                  Belo Horizonte ou São Paulo.
+                  Atendo em português, inglês e espanhol. Virtualmente, uso MS Teams, Google Meet ou Zoom. Reuniões
+                  presenciais podem ser agendadas em Belo Horizonte ou São Paulo.
                 </p>
                 <p className="mb-0">
-                  Para convites de palestras e aulas, inclua tema desejado, público e
-                  formato ao entrar em contato.
+                  Para convites de palestras e aulas, inclua tema desejado, público e formato ao entrar em contato.
                 </p>
               </div>
             </div>

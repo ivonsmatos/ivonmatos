@@ -1,27 +1,29 @@
-import type { Metadata } from "next";
-import Link from "next/link";
+import { Helmet } from "react-helmet-async";
+import { Link } from "react-router-dom";
 
-import AnimatedSection from "../(components)/AnimatedSection";
+import AnimatedSection from "@/components/AnimatedSection";
 import { posts } from "@/data/posts";
 
 const categories = Array.from(new Set(posts.map((post) => post.category)));
 
-export const metadata: Metadata = {
-  title: "Blog e Insights",
-  description:
-    "Artigos de Ivon Matos sobre arquitetura em IA, estratégia de dados, educação e liderança técnica.",
-};
-
 export default function BlogPage() {
   return (
     <>
+      <Helmet>
+        <title>Blog e Insights</title>
+        <meta
+          name="description"
+          content="Artigos de Ivon Matos sobre arquitetura em IA, estratégia de dados, educação executiva e liderança técnica."
+        />
+        <link rel="canonical" href="https://ivonmatos.com.br/blog" />
+      </Helmet>
+
       <AnimatedSection id="blog-intro" className="pt-6">
         <div className="container text-center">
           <span className="badge-soft mb-3">Blog</span>
           <h1 className="mb-3">Insights para arquitetar inteligência</h1>
           <p className="mx-auto max-w-44">
-            Curadoria de aprendizados, frameworks e estudos de caso em
-            Inteligência Artificial, dados e educação executiva.
+            Curadoria de aprendizados, frameworks e estudos de caso em Inteligência Artificial, dados e educação executiva.
           </p>
           <div className="d-flex flex-wrap gap-2 justify-content-center mt-4">
             {categories.map((category) => (
@@ -53,7 +55,7 @@ export default function BlogPage() {
                       </span>
                     ))}
                   </div>
-                  <Link className="stretched-link" href={`/blog/${post.slug}`}>
+                  <Link className="stretched-link" to={`/blog/${post.slug}`}>
                     <span className="visually-hidden">Ler {post.title}</span>
                   </Link>
                 </article>
@@ -67,8 +69,8 @@ export default function BlogPage() {
         <div className="container text-center">
           <h2 className="mb-3">Aprendizados direto no seu e-mail</h2>
           <p className="mx-auto max-w-40 mb-4">
-            Cadastre-se para receber resumos mensais com novidades sobre
-            arquitetura de IA, cases em dados e experiências em sala de aula.
+            Cadastre-se para receber resumos mensais com novidades sobre arquitetura de IA, cases em dados e experiências
+            em sala de aula.
           </p>
           <form className="row g-3 justify-content-center" aria-label="Assine a newsletter">
             <div className="col-12 col-md-5">

@@ -1,15 +1,9 @@
-import type { Metadata } from "next";
-import Link from "next/link";
+import { Helmet } from "react-helmet-async";
+import { Link } from "react-router-dom";
 
-import AnimatedSection from "../(components)/AnimatedSection";
+import AnimatedSection from "@/components/AnimatedSection";
 import { experiences } from "@/data/experiences";
 import { services } from "@/data/services";
-
-export const metadata: Metadata = {
-  title: "Currículo",
-  description:
-    "Currículo completo de Ivon Matos com experiências, competências técnicas, educação e reconhecimentos em IA e dados.",
-};
 
 const competencias = [
   {
@@ -60,16 +54,24 @@ const idiomas = [
 export default function CurriculumPage() {
   return (
     <>
+      <Helmet>
+        <title>Currículo</title>
+        <meta
+          name="description"
+          content="Currículo de Ivon Matos com experiências, competências, educação e reconhecimentos em inteligência artificial e dados."
+        />
+        <link rel="canonical" href="https://ivonmatos.com.br/curriculum" />
+      </Helmet>
+
       <AnimatedSection id="curriculo-intro" className="pt-6">
         <div className="container text-center">
           <span className="badge-soft mb-3">Currículo</span>
           <h1 className="mb-3">Experiência integrada em IA, dados e educação</h1>
           <p className="mx-auto max-w-42">
-            Resumo das principais entregas, competências e formações que
-            sustentam minha atuação em arquitetura de inteligência artificial e
-            dados.
+            Resumo das principais entregas, competências e formações que sustentam minha atuação em arquitetura de
+            inteligência artificial e dados.
           </p>
-          <Link className="btn btn-cta touch-friendly" href="/contato">
+          <Link className="btn btn-cta touch-friendly" to="/contato">
             Solicitar versão em PDF
           </Link>
         </div>

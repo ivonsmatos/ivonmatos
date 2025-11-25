@@ -1,8 +1,5 @@
-"use client";
-
-import Link from "next/link";
+import { NavLink } from "react-router-dom";
 import { useEffect, useState } from "react";
-import { usePathname } from "next/navigation";
 
 const NAV_LINKS = [
   { href: "/", label: "Início" },
@@ -13,19 +10,20 @@ const NAV_LINKS = [
 ];
 
 export default function MainNav() {
-  const pathname = usePathname();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const handleNavigate = () => setIsMenuOpen(false);
+  const ariaExpanded: "true" | "false" = isMenuOpen ? "true" : "false";
 
   useEffect(() => {
-    const onScroll = () => {
+    const handleScroll = () => {
       setIsScrolled(window.scrollY > 12);
     };
 
-    onScroll();
-    window.addEventListener("scroll", onScroll, { passive: true });
-    return () => window.removeEventListener("scroll", onScroll);
+    handleScroll();
+    window.addEventListener("scroll", handleScroll, { passive: true });
+
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   return (
@@ -36,14 +34,14 @@ export default function MainNav() {
       aria-label="Navegação principal"
     >
       <div className="container">
-        <Link className="navbar-brand" href="/" onClick={handleNavigate}>
+        <NavLink className="navbar-brand" to="/">
           Ivon Matos
-        </Link>
+        </NavLink>
         <button
           className="navbar-toggler touch-friendly"
           type="button"
           aria-controls="navbar-conteudo"
-          aria-expanded={isMenuOpen}
+          aria-expanded={ariaExpanded}
           aria-label="Alternar menu"
           onClick={() => setIsMenuOpen((value) => !value)}
         >
@@ -56,31 +54,23 @@ export default function MainNav() {
           id="navbar-conteudo"
         >
           <ul className="navbar-nav align-items-lg-center me-lg-3 gap-lg-2">
-            {NAV_LINKS.map((item) => {
-              const isActive =
-                pathname === item.href ||
-                (item.href !== "/" && pathname.startsWith(item.href));
-
-              return (
-                <li className="nav-item" key={item.href}>
-                  <Link
-                    className={`nav-link ${isActive ? "active" : ""}`}
-                    href={item.href}
-                    onClick={handleNavigate}
-                  >
-                    {item.label}
-                  </Link>
-                </li>
-              );
-            })}
+            {NAV_LINKS.map((item) => (
+              <li className="nav-item" key={item.href}>
+                <NavLink
+                  className={({ isActive }: { isActive: boolean }) =>
+                    `nav-link ${isActive ? "active" : ""}`
+                  }
+                  to={item.href}
+                  onClick={handleNavigate}
+                >
+                  {item.label}
+                </NavLink>
+              </li>
+            ))}
           </ul>
-          <Link
-            className="btn btn-cta touch-friendly"
-            href="/contato"
-            onClick={handleNavigate}
-          >
+          <NavLink className="btn btn-cta touch-friendly" to="/contato" onClick={handleNavigate}>
             Vamos Conversar
-          </Link>
+          </NavLink>
         </div>
       </div>
     </nav>
