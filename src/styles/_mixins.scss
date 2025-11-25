@@ -1,0 +1,47 @@
+@use "sass:map";
+@use "sass:math";
+@use "./variables" as *;
+
+@mixin respond($breakpoint) {
+  $breakpoints: (
+    "sm": 576px,
+    "md": 768px,
+    "lg": 992px,
+    "xl": 1200px,
+    "xxl": 1400px
+  );
+
+  @media (min-width: map.get($breakpoints, $breakpoint)) {
+    @content;
+  }
+}
+
+@mixin retina {
+  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    @content;
+  }
+}
+
+@mixin card-surface {
+  background-color: #fff;
+  border: 1px solid rgba($color-slate, 0.3);
+  border-radius: $radius-base;
+  box-shadow: $shadow-soft;
+  transition: transform $transition-base, box-shadow $transition-base;
+
+  &:hover,
+  &:focus-within {
+    box-shadow: $shadow-hover;
+    transform: translateY(-6px);
+  }
+}
+
+@mixin section-padding {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+
+  @include respond("md") {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+}

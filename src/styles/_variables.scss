@@ -1,0 +1,31 @@
+$color-slate: #a3b2bf;
+$color-silver: #c5d0d9;
+$color-ice: #ebeff2;
+$color-carbon: #595959;
+$color-ink: #0d0d0d;
+
+$body-bg: $color-ice;
+$body-color: $color-ink;
+$link-color: $color-ink;
+$link-hover-color: $color-carbon;
+
+$font-family-base: "Arial", "Helvetica", sans-serif;
+$font-weight-bold: 700;
+$font-weight-medium: 500;
+$font-weight-regular: 400;
+
+$transition-base: 240ms ease;
+$radius-base: 18px;
+
+$shadow-soft: 0 15px 35px rgba($color-ink, 0.08);
+$shadow-hover: 0 20px 45px rgba($color-ink, 0.12);
+
+$spacer: 1rem;
+$spacers: (
+  0: 0,
+  1: $spacer * 0.5,
+  2: $spacer,
+  3: $spacer * 1.5,
+  4: $spacer * 2.5,
+  5: $spacer * 4
+);

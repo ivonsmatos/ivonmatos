@@ -1,0 +1,30 @@
+@use "./variables" as *;
+
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.reveal {
+  opacity: 0;
+}
+
+.reveal-active {
+  animation: fade-in-up 0.9s ease forwards;
+}
+
+.hover-activate {
+  transition: transform $transition-base, box-shadow $transition-base;
+
+  &:hover,
+  &:focus-visible {
+    transform: translateY(-8px);
+    box-shadow: $shadow-hover;
+  }
+}
