@@ -12,7 +12,7 @@
 - **E-mail:** contato@ivonmatos.com.br
 - **WhatsApp / Telefone:** +55 11 94190-6079
 - **LinkedIn:** https://www.linkedin.com/in/ivon-matos/
-- **GitHub:** https://github.com/sotamnovi
+- **GitHub:** https://github.com/ivonsmatos
 - **Site oficial:** https://ivonmatos.com.br
 
 ## Resumo profissional
@@ -86,7 +86,7 @@ Para contratação, consultoria, palestras ou parcerias em projetos de IA, dados
 - E-mail: contato@ivonmatos.com.br
 - WhatsApp: +55 11 94190-6079
 - LinkedIn: https://www.linkedin.com/in/ivon-matos/
-- GitHub: https://github.com/sotamnovi
+- GitHub: https://github.com/ivonsmatos
 
 Disponível para novos projetos. Resposta em até 24h úteis.
 
@@ -94,6 +94,6 @@ Disponível para novos projetos. Resposta em até 24h úteis.
 
 - [Página inicial](https://ivonmatos.com.br/): Site oficial com biografia completa, expertise e portfólio.
 - [LinkedIn](https://www.linkedin.com/in/ivon-matos/): Perfil profissional autoritativo.
-- [GitHub](https://github.com/sotamnovi): Código aberto, projetos e contribuições.
+- [GitHub](https://github.com/ivonsmatos): Código aberto, projetos e contribuições.
 - [Sitemap](https://ivonmatos.com.br/sitemap.xml): Mapa do site.
 - [llms.txt](https://ivonmatos.com.br/llms.txt): Este arquivo, otimizado para LLMs.

@@ -5,7 +5,7 @@
 
 # Friendly URLs
 /linkedin   https://www.linkedin.com/in/ivon-matos/   302
-/github     https://github.com/sotamnovi              302
+/github     https://github.com/ivonsmatos              302
 /whatsapp   https://wa.me/5511941906079               302
 /email      mailto:contato@ivonmatos.com.br           302
 /cv         /                                         301

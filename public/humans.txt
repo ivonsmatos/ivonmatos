@@ -5,7 +5,7 @@
   Contact: contato@ivonmatos.com.br
   Phone: +55 11 94190-6079
   LinkedIn: linkedin.com/in/ivon-matos
-  GitHub: github.com/sotamnovi
+  GitHub: github.com/ivonsmatos
   Location: São Paulo, Brasil
 
 /* SITE */

@@ -164,7 +164,7 @@ const jsonLd = {
         'React',
         'Next.js',
       ],
-      sameAs: ['https://www.linkedin.com/in/ivon-matos/', 'https://github.com/sotamnovi'],
+      sameAs: ['https://www.linkedin.com/in/ivon-matos/', 'https://github.com/ivonsmatos'],
       nationality: { '@type': 'Country', name: 'Brasil' },
     },
     {
@@ -214,7 +214,7 @@ const jsonLd = {
           name: 'Como entrar em contato com Ivon Matos?',
           acceptedAnswer: {
             '@type': 'Answer',
-            text: 'Por e-mail em contato@ivonmatos.com.br, WhatsApp (+55 11 94190-6079), LinkedIn em linkedin.com/in/ivon-matos ou GitHub em github.com/sotamnovi.',
+            text: 'Por e-mail em contato@ivonmatos.com.br, WhatsApp (+55 11 94190-6079), LinkedIn em linkedin.com/in/ivon-matos ou GitHub em github.com/ivonsmatos.',
           },
         },
         {

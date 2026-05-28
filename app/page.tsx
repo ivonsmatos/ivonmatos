@@ -444,7 +444,7 @@ function Contato() {
     { label: 'E-mail',   value: contact.email,            href: `mailto:${contact.email}` },
     { label: 'WhatsApp', value: contact.phone,            href: contact.whatsapp,            external: true },
     { label: 'LinkedIn', value: '/in/ivon-matos',          href: contact.linkedin,            external: true },
-    { label: 'GitHub',   value: '/sotamnovi',              href: contact.github,              external: true },
+    { label: 'GitHub',   value: '/ivonsmatos',              href: contact.github,              external: true },
   ];
 
   return (

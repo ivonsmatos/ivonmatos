@@ -3,7 +3,7 @@ export const contact = {
   phone: '+55 11 94190-6079',
   phoneRaw: '5511941906079',
   linkedin: 'https://www.linkedin.com/in/ivon-matos/',
-  github: 'https://github.com/sotamnovi',
+  github: 'https://github.com/ivonsmatos',
   whatsapp: 'https://wa.me/5511941906079?text=Ol%C3%A1%20Ivon%2C%20vim%20pelo%20seu%20site.',
 };
 
