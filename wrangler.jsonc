@@ -1,0 +1,20 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "ivonmatos",
+  "compatibility_date": "2025-05-28",
+  "compatibility_flags": [],
+
+  // Servir o output estático do Next.js como Static Assets do Worker
+  "assets": {
+    "directory": "./out",
+    // Resolve URLs como "/sobre" -> "/sobre.html" (Next static export)
+    "html_handling": "auto-trailing-slash",
+    // Usa a página 404.html gerada pelo Next em rotas inexistentes
+    "not_found_handling": "404-page"
+  },
+
+  // Telemetria de runtime (opcional, mas útil)
+  "observability": {
+    "enabled": true
+  }
+}
