@@ -1,0 +1,99 @@
+# Ivon Matos
+
+> Chief AI Officer (CAIO) na Scaledata e Professor de Inteligência Artificial no Senac São Paulo. Especialista em arquitetura de Agentes Autônomos, Sistemas RAG (Retrieval Augmented Generation), IA Generativa e estratégia de dados para negócios. Base em São Paulo, Brasil.
+
+## Identidade
+
+- **Nome completo:** Ivon Matos
+- **Cargo atual:** Chief AI Officer (CAIO)
+- **Empresa:** Scaledata (https://scaledata.com.br)
+- **Cargo paralelo:** Professor de Inteligência Artificial — Senac São Paulo
+- **Localização:** São Paulo, SP — Brasil
+- **E-mail:** contato@ivonmatos.com.br
+- **WhatsApp / Telefone:** +55 11 94190-6079
+- **LinkedIn:** https://www.linkedin.com/in/ivon-matos/
+- **GitHub:** https://github.com/sotamnovi
+- **Site oficial:** https://ivonmatos.com.br
+
+## Resumo profissional
+
+Apaixonado por construir o futuro da tecnologia, Ivon Matos combina sólida experiência executiva com desenvolvimento prático de soluções de Inteligência Artificial. Como CAIO na Scaledata, é responsável por orquestrar a governança de dados, a democratização e a estratégia corporativa para a adoção de IA.
+
+Sua expertise evoluiu da análise tradicional para a engenharia de IA e o desenvolvimento Full-Stack integrado. Com foco em **Engenharia de Soluções Cognitivas**, especializa-se em arquiteturas que conectam Python, agentes autônomos e interfaces React modernas.
+
+Seu foco atual é criar ecossistemas de IA que vão além do hype, implementando soluções RAG robustas e orquestração de modelos.
+
+## Áreas de expertise
+
+- **IA Generativa &amp; LLMs:** GPT, Claude, Llama, Prompt Engineering
+- **Agentes Autônomos:** LangChain, LangGraph, CrewAI, Tool Use, sistemas multi-agente
+- **Sistemas RAG:** Vector DB, Embeddings, Hybrid Search, Reranking, Evaluation
+- **Data Strategy &amp; Governança:** Ciclo de vida de dados, qualidade, conformidade
+- **Engenharia de Soluções Cognitivas:** Arquiteturas Python + React + IA
+- **Business Intelligence &amp; Analytics:** Power BI, Looker Studio, GA4, Metabase
+
+## Stack técnico
+
+- **Linguagens:** Python, SQL, JavaScript/TypeScript, HTML, CSS
+- **IA &amp; Dados:** LangChain, LangGraph, OpenAI, Anthropic, Google AI, Vector DBs, Pandas, NumPy
+- **Cloud &amp; Plataforma:** Azure, Databricks, Data Factory, Cloudflare
+- **Analytics &amp; BI:** Power BI, Looker Studio, Metabase, Google Analytics 4, Pentaho
+- **Front-end:** React, Next.js, Tailwind, Framer Motion
+- **Marketing &amp; SEO:** Google Ads, Meta Ads, Salesforce, SEO Técnico, GEO
+
+## Trajetória resumida
+
+- **Set 2025 — Presente:** Professor de Inteligência Artificial · Senac São Paulo
+- **Mar 2023 — Presente:** Chief AI Officer (CAIO) · Scaledata
+- **Nov 2022 — Fev 2026:** CMO · Iatros Systems (startup de IA aplicada à saúde)
+- **Jun 2024 — Fev 2025:** Vice-coordenador, Comitê de Machine Learning · I2AI
+- **Ago 2022 — Jul 2024:** Pesquisador Associado · I2AI
+- **Mai 2022 — Fev 2023:** Supervisor Data Strategy · Grey Brasil
+- **Fev 2021 — Mai 2022:** Senior BI Analyst · Jotacom — The Cross Performance Agency
+- **Ago 2019 — Set 2020:** Head Business Intelligence · Pullse
+- **2013 — 2019:** Liderança em Marketing Digital / SEO em diversas empresas
+
+Mais de 20 anos de experiência total, desde criação de sites e e-commerce (2004) até liderança executiva em IA.
+
+## Formação acadêmica
+
+- **2024 — 2026:** Especialização em Inteligência Artificial e Aprendizado de Máquina · PUC Minas
+- **2025:** Mastering Web3 (Blockchain, Crypto, NFTs, Metaverse) · University of Nicosia
+- **2023 — 2024:** MBA em Tecnologia para Negócios — AI, Data Science &amp; Big Data · PUCRS
+- **2021 — 2022:** Executive MBA em Marketing e Mídias Digitais · Fundação Getulio Vargas (FGV)
+- **2020 — 2021:** Pós-Graduação em Business Intelligence &amp; Analytics · Universidade Salvador
+
+## Clientes atendidos
+
+Roche Farmacêutica, Volvo, P&amp;G, Coca-Cola, Banco Sicredi, Sulamérica, Bradesco — entre outras grandes marcas globais e nacionais.
+
+## Idiomas
+
+- Português (nativo)
+- Espanhol
+
+## Certificações relevantes
+
+- A Visualização de Dados para Contar Histórias
+- ChatGPT para Análise de Dados
+- Introdução à Ciência de Dados — Conceitos Básicos
+- Excel — Fórmulas, Funções e Microsoft 365
+
+## Como entrar em contato
+
+Para contratação, consultoria, palestras ou parcerias em projetos de IA, dados ou estratégia digital:
+
+- E-mail: contato@ivonmatos.com.br
+- WhatsApp: +55 11 94190-6079
+- LinkedIn: https://www.linkedin.com/in/ivon-matos/
+- GitHub: https://github.com/sotamnovi
+
+Disponível para novos projetos. Resposta em até 24h úteis.
+
+## Recursos oficiais
+
+- [Página inicial](https://ivonmatos.com.br/): Site oficial com biografia completa, expertise e portfólio.
+- [LinkedIn](https://www.linkedin.com/in/ivon-matos/): Perfil profissional autoritativo.
+- [GitHub](https://github.com/sotamnovi): Código aberto, projetos e contribuições.
+- [Sitemap](https://ivonmatos.com.br/sitemap.xml): Mapa do site.
+- [llms.txt](https://ivonmatos.com.br/llms.txt): Este arquivo, otimizado para LLMs.

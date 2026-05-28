@@ -1,0 +1,18 @@
+/* TEAM */
+  Owner: Ivon Matos
+  Role: Chief AI Officer · AI Engineering & Data Strategy
+  Site: https://ivonmatos.com.br
+  Contact: contato@ivonmatos.com.br
+  Phone: +55 11 94190-6079
+  LinkedIn: linkedin.com/in/ivon-matos
+  GitHub: github.com/sotamnovi
+  Location: São Paulo, Brasil
+
+/* SITE */
+  Last update: 2026/05/28
+  Language: Portuguese (pt-BR)
+  Doctype: HTML5
+  Standards: HTML5, CSS3, ES6+, Schema.org JSON-LD
+  Hosting: Cloudflare Pages
+  Fonts: Inter, Fraunces, JetBrains Mono (Google Fonts)
+  Components: Single Page Application — vanilla
