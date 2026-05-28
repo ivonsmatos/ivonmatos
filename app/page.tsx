@@ -183,7 +183,7 @@ function Sobre() {
               />
               <CardRow label="Atual" value="Chief AI Officer" />
               <CardRow label="Em" value="Scaledata" />
-              <CardRow label="Também" value="Professor de IA · Senac SP" />
+              <CardRow label="Foco" value="Agentes Autônomos · RAG" />
               <CardRow label="Base" value="São Paulo · BR" />
               <CardRow label="Línguas" value="Português · Espanhol" />
               <div className="relative mt-4 flex items-center gap-2.5 text-sm text-[var(--color-mist)]">
@@ -478,24 +478,26 @@ function Contato() {
                 href={c.href}
                 target={c.external ? '_blank' : undefined}
                 rel={c.external ? 'noopener noreferrer' : undefined}
-                className="tilt-card group relative grid h-full grid-cols-[1fr_auto] items-end gap-2 overflow-hidden rounded-[18px] border border-[var(--color-line)] bg-[var(--color-bg-alt)] p-7"
+                className="tilt-card group relative flex h-full flex-col gap-4 overflow-hidden rounded-[18px] border border-[var(--color-line)] bg-[var(--color-bg-alt)] p-6"
               >
                 <div
                   aria-hidden
                   className="pointer-events-none absolute inset-0 bg-[linear-gradient(135deg,transparent_50%,color-mix(in_srgb,var(--color-bronze)_18%,transparent)_100%)] opacity-0 transition-opacity duration-500 group-hover:opacity-100"
                 />
-                <span className="col-span-full mb-4 relative font-[family-name:var(--font-mono)] text-[.75rem] uppercase tracking-[.14em] text-[var(--color-muted)]">
+                <span className="relative font-[family-name:var(--font-mono)] text-[.7rem] uppercase tracking-[.14em] text-[var(--color-muted)]">
                   {c.label}
                 </span>
-                <span className="relative font-[family-name:var(--font-display)] text-[clamp(1.05rem,1.5vw,1.3rem)] font-medium tracking-[-.012em]">
-                  {c.value}
-                </span>
-                <span
-                  aria-hidden
-                  className="relative text-2xl text-[var(--color-bronze)] transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1"
-                >
-                  →
-                </span>
+                <div className="relative flex flex-1 items-end justify-between gap-3">
+                  <span className="min-w-0 break-words font-[family-name:var(--font-display)] text-[clamp(.95rem,1.05vw+.4rem,1.15rem)] font-medium leading-[1.25] tracking-[-.012em]">
+                    {c.value}
+                  </span>
+                  <span
+                    aria-hidden
+                    className="shrink-0 text-2xl leading-none text-[var(--color-bronze)] transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1"
+                  >
+                    →
+                  </span>
+                </div>
               </a>
             </Reveal>
           ))}

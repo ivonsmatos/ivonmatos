@@ -1,13 +1,12 @@
 # Ivon Matos
 
-> Chief AI Officer (CAIO) na Scaledata e Professor de Inteligência Artificial no Senac São Paulo. Especialista em arquitetura de Agentes Autônomos, Sistemas RAG (Retrieval Augmented Generation), IA Generativa e estratégia de dados para negócios. Base em São Paulo, Brasil.
+> Chief AI Officer (CAIO) na Scaledata. Especialista em arquitetura de Agentes Autônomos, Sistemas RAG (Retrieval Augmented Generation), IA Generativa e estratégia de dados para negócios. Base em São Paulo, Brasil.
 
 ## Identidade
 
-- **Nome completo:** Ivon Matos
+- **Nome completo:** Ivon André Santana Matos
 - **Cargo atual:** Chief AI Officer (CAIO)
 - **Empresa:** Scaledata (https://scaledata.com.br)
-- **Cargo paralelo:** Professor de Inteligência Artificial — Senac São Paulo
 - **Localização:** São Paulo, SP — Brasil
 - **E-mail:** contato@ivonmatos.com.br
 - **WhatsApp / Telefone:** +55 11 94190-6079
@@ -30,20 +29,19 @@ Seu foco atual é criar ecossistemas de IA que vão além do hype, implementando
 - **Sistemas RAG:** Vector DB, Embeddings, Hybrid Search, Reranking, Evaluation
 - **Data Strategy &amp; Governança:** Ciclo de vida de dados, qualidade, conformidade
 - **Engenharia de Soluções Cognitivas:** Arquiteturas Python + React + IA
-- **Business Intelligence &amp; Analytics:** Power BI, Looker Studio, GA4, Metabase
+- **Business Intelligence &amp; Analytics:** Power BI, Looker Studio, Tableau, Metabase
 
 ## Stack técnico
 
 - **Linguagens:** Python, SQL, JavaScript/TypeScript, HTML, CSS
 - **IA &amp; Dados:** LangChain, LangGraph, OpenAI, Anthropic, Google AI, Vector DBs, Pandas, NumPy
-- **Cloud &amp; Plataforma:** Azure, Databricks, Data Factory, Cloudflare
-- **Analytics &amp; BI:** Power BI, Looker Studio, Metabase, Google Analytics 4, Pentaho
+- **Cloud &amp; Plataforma:** Azure, AWS, Data Factory, Cloudflare
+- **Analytics &amp; BI:** Power BI, Looker Studio, Metabase, Tableau
 - **Front-end:** React, Next.js, Tailwind, Framer Motion
-- **Marketing &amp; SEO:** Google Ads, Meta Ads, Salesforce, SEO Técnico, GEO
+- **Marketing &amp; SEO:** Google Ads, Meta Ads, Google Analytics 4, Salesforce, SEO Técnico, GEO
 
 ## Trajetória resumida
 
-- **Set 2025 — Presente:** Professor de Inteligência Artificial · Senac São Paulo
 - **Mar 2023 — Presente:** Chief AI Officer (CAIO) · Scaledata
 - **Nov 2022 — Fev 2026:** CMO · Iatros Systems (startup de IA aplicada à saúde)
 - **Jun 2024 — Fev 2025:** Vice-coordenador, Comitê de Machine Learning · I2AI
@@ -62,6 +60,7 @@ Mais de 20 anos de experiência total, desde criação de sites e e-commerce (20
 - **2023 — 2024:** MBA em Tecnologia para Negócios — AI, Data Science &amp; Big Data · PUCRS
 - **2021 — 2022:** Executive MBA em Marketing e Mídias Digitais · Fundação Getulio Vargas (FGV)
 - **2020 — 2021:** Pós-Graduação em Business Intelligence &amp; Analytics · Universidade Salvador
+- **2014 — 2016:** Graduação · Tecnólogo em Gestão da Tecnologia da Informação · Faculdade Dom Pedro II de Tecnologia (Salvador, BA)
 
 ## Clientes atendidos
 

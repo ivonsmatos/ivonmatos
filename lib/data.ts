@@ -36,23 +36,16 @@ export const expertise = [
     n: '04',
     title: 'Data Strategy & Governança',
     desc: 'Estruturação do ciclo de vida dos dados, qualidade, conformidade e democratização do acesso para acelerar decisões.',
-    tags: ['Azure', 'Databricks', 'Power BI', 'GA4'],
+    tags: ['Azure', 'AWS', 'Power BI', 'Tableau'],
   },
 ];
 
 export const timeline = [
   {
-    period: 'Set 2025 — Presente',
-    role: 'Professor de Inteligência Artificial',
-    org: 'Senac São Paulo',
-    desc: 'Formando a próxima geração de profissionais de IA no Brasil.',
-    current: true,
-  },
-  {
     period: 'Mar 2023 — Presente',
     role: 'Chief AI Officer (CAIO)',
     org: 'Scaledata',
-    desc: 'Liderança da governança de dados, estratégia corporativa de IA, plataforma em Azure/Databricks/Power BI e atendimento a clientes como Roche.',
+    desc: 'Liderança da governança de dados, estratégia corporativa de IA, plataforma em Azure/AWS/Power BI e atendimento a clientes como Roche.',
     current: true,
   },
   {
@@ -93,10 +86,10 @@ export const clients = [
 export const stack = [
   { col: 'Linguagens', items: ['Python', 'SQL', 'TypeScript', 'HTML & CSS'] },
   { col: 'IA & Dados', items: ['LangChain · LangGraph', 'OpenAI · Anthropic', 'Vector DBs', 'Pandas · NumPy'] },
-  { col: 'Cloud', items: ['Azure', 'Databricks', 'Data Factory', 'Cloudflare'] },
-  { col: 'Analytics', items: ['Power BI', 'Looker Studio', 'Metabase', 'Google Analytics 4'] },
-  { col: 'Front-end', items: ['React', 'Next.js', 'Tailwind', 'Framer Motion'] },
-  { col: 'Marketing', items: ['Google · Meta Ads', 'SEO Técnico · GEO', 'Salesforce', 'Pentaho'] },
+  { col: 'Cloud',      items: ['Azure', 'AWS', 'Data Factory', 'Cloudflare'] },
+  { col: 'Analytics',  items: ['Power BI', 'Looker Studio', 'Metabase', 'Tableau'] },
+  { col: 'Front-end',  items: ['React', 'Next.js', 'Tailwind', 'Framer Motion'] },
+  { col: 'Marketing',  items: ['Google · Meta Ads', 'SEO Técnico · GEO', 'Google Analytics 4', 'Salesforce'] },
 ];
 
 export const education = [
@@ -124,5 +117,10 @@ export const education = [
     period: '2020 — 2021',
     title: 'Pós-Graduação em Business Intelligence & Analytics',
     org: 'Universidade Salvador (UNIFACS)',
+  },
+  {
+    period: '2014 — 2016',
+    title: 'Graduação · Tecnólogo em Gestão da Tecnologia da Informação',
+    org: 'Faculdade Dom Pedro II de Tecnologia · Salvador, BA',
   },
 ];

@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     template: '%s · Ivon Matos',
   },
   description:
-    'Ivon Matos — Chief AI Officer na Scaledata e Professor de IA no Senac SP. Especialista em arquitetura de Agentes Autônomos, RAG, IA Generativa e estratégia de dados para negócios em São Paulo.',
+    'Ivon Matos — Chief AI Officer na Scaledata. Especialista em arquitetura de Agentes Autônomos, Sistemas RAG, IA Generativa e estratégia de dados para negócios em São Paulo.',
   applicationName: 'Ivon Matos',
   authors: [{ name: 'Ivon Matos', url: SITE_URL }],
   generator: 'Next.js',
@@ -48,7 +48,6 @@ export const metadata: Metadata = {
     'Agentes Autônomos',
     'IA Generativa',
     'Scaledata',
-    'Senac São Paulo',
     'consultor de IA',
     'engenheiro de IA',
   ],
@@ -67,7 +66,7 @@ export const metadata: Metadata = {
     siteName: 'Ivon Matos',
     title: 'Ivon Matos | Chief AI Officer · AI Engineering & Data Strategy',
     description:
-      'Chief AI Officer na Scaledata. Arquiteto de Agentes Autônomos e Sistemas RAG. Professor de IA no Senac SP.',
+      'Chief AI Officer na Scaledata. Arquiteto de Agentes Autônomos e Sistemas RAG. Especialista em IA Generativa para soluções de negócios.',
     firstName: 'Ivon',
     lastName: 'Matos',
     images: [
@@ -142,7 +141,6 @@ const jsonLd = {
       },
       worksFor: [
         { '@type': 'Organization', name: 'Scaledata' },
-        { '@type': 'EducationalOrganization', name: 'Senac São Paulo' },
       ],
       alumniOf: [
         { '@type': 'EducationalOrganization', name: 'PUC Minas' },
@@ -150,6 +148,7 @@ const jsonLd = {
         { '@type': 'EducationalOrganization', name: 'PUCRS' },
         { '@type': 'EducationalOrganization', name: 'Fundação Getulio Vargas (FGV)' },
         { '@type': 'EducationalOrganization', name: 'Universidade Salvador (UNIFACS)' },
+        { '@type': 'EducationalOrganization', name: 'Faculdade Dom Pedro II de Tecnologia' },
       ],
       knowsAbout: [
         'Inteligência Artificial Generativa',
@@ -198,7 +197,7 @@ const jsonLd = {
           name: 'Quem é Ivon Matos?',
           acceptedAnswer: {
             '@type': 'Answer',
-            text: 'Ivon Matos é Chief AI Officer (CAIO) na Scaledata e Professor de Inteligência Artificial no Senac São Paulo. Especialista em arquitetura de Agentes Autônomos, Sistemas RAG, IA Generativa e estratégia de dados.',
+            text: 'Ivon Matos é Chief AI Officer (CAIO) na Scaledata. Especialista em arquitetura de Agentes Autônomos, Sistemas RAG, IA Generativa e estratégia de dados para negócios.',
           },
         },
         {
