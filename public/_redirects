@@ -1,15 +1,14 @@
-# Cloudflare Pages redirects
+# Cloudflare Workers Static Assets - redirects
+# Cache-bust: 2026-05-29
+# Schemes permitidos: relativos (/) ou HTTPS (https://)
 
-# Force apex domain (descomente se usar www)
-# https://www.ivonmatos.com.br/*  https://ivonmatos.com.br/:splat  301!
+# Atalhos para perfis sociais
+/linkedin    https://www.linkedin.com/in/ivon-matos/    302
+/github      https://github.com/ivonsmatos              302
+/whatsapp    https://wa.me/5511941906079                302
 
-# Friendly URLs (apenas HTTPS ou relativas — Cloudflare nao aceita mailto:/tel:)
-/linkedin   https://www.linkedin.com/in/ivon-matos/   302
-/github     https://github.com/ivonsmatos              302
-/whatsapp   https://wa.me/5511941906079               302
-/cv         /                                         301
-/curriculo  /                                         301
-
-# Legacy paths -> home
-/index.html /  301
-/home       /  301
+# Atalhos legados
+/cv          /                                          301
+/curriculo   /                                          301
+/index.html  /                                          301
+/home        /                                          301
