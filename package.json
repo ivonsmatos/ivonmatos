@@ -5,6 +5,9 @@
   "description": "Site oficial de Ivon Matos — Chief AI Officer · AI Engineering & Data Strategy",
   "author": "Ivon Matos <contato@ivonmatos.com.br>",
   "license": "UNLICENSED",
+  "engines": {
+    "node": ">=22.0.0"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
