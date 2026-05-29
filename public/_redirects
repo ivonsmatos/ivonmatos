@@ -3,11 +3,10 @@
 # Force apex domain (descomente se usar www)
 # https://www.ivonmatos.com.br/*  https://ivonmatos.com.br/:splat  301!
 
-# Friendly URLs
+# Friendly URLs (apenas HTTPS ou relativas — Cloudflare nao aceita mailto:/tel:)
 /linkedin   https://www.linkedin.com/in/ivon-matos/   302
 /github     https://github.com/ivonsmatos              302
 /whatsapp   https://wa.me/5511941906079               302
-/email      mailto:contato@ivonmatos.com.br           302
 /cv         /                                         301
 /curriculo  /                                         301
 
